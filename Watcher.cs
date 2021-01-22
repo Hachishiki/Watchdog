@@ -6,7 +6,7 @@ namespace WatchDog
 {
     class Watcher
     {
-        public Dictionary<string, string> hashedDictionary = new Dictionary<string, string>();
+        private Dictionary<string, string> hashedDictionary = new Dictionary<string, string>();
 
         public void Watch(string path)
         {
@@ -20,7 +20,7 @@ namespace WatchDog
             }
             else
             {
-                Console.WriteLine("The directory does nopt exist. Please enter a different path.");
+                Console.WriteLine("The directory does not exist. Please enter a different path.");
             }
         }
 
